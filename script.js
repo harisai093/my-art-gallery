@@ -30,7 +30,7 @@ const myWorks = [
     { title: "The Chair", img: "images/chair.jpg", type: "Craft" },
     { title: "The Heart ", img: "images/love symbol.jpg", type: "Craft" },
     { title: "The Ship", img: "images/ship.jpg", type: "Craft" },
-    { title: "The Stars", img: "images/Stars.jpg", type: "Craft" },
+    { title: "The Stars", img: "images/stars.jpg", type: "Craft" },
 ];
 
 let filteredWorks = [...myWorks];
@@ -124,4 +124,5 @@ function toggleFullscreen() {
 }
 
 speedSlider.oninput = restartTimer;
+
 filterGallery('All');
