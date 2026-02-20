@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MY ART GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="CraftGallery-container" id="CraftGallery-container">
+        <div class="toolbar">
+            <h2 class="title">MY ART GALLERY</h2>
+            <div class="toolbar-actions">
+                <button class="fullscreen-btn" onclick="toggleFullscreen()" title="Full Screen">⛶</button>
+            </div>
+        </div>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" onclick="filterGallery('All')">All</button>
+            <button class="filter-btn" onclick="filterGallery('Drawing')">Drawings</button>
+            <button class="filter-btn" onclick="filterGallery('Craft')">Crafts</button>
+        </div>
+        
+        <div class="slider-wrapper">
+            <div class="slides" id="slides-container"></div>
+            <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
+            <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
+        </div>
+
+        <div class="dots-container" id="dots-container"></div>
+
+        <div class="controls-bar">
+            <div class="play-pause">
+                <input type="checkbox" id="playPauseCheckbox" onchange="toggleAutoplay()" />
+                <label for="playPauseCheckbox" title="Play/Pause Autoplay"></label>
+            </div>
+            <div class="speed-control">
+                <span class="label">Speed</span>
+                <input type="range" id="speed-slider" min="1000" max="5000" step="500" value="3000">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
